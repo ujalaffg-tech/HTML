@@ -1,0 +1,260 @@
+<!-- Doctype: browser ko batata hai ki ye HTML5 document hai -->
+<!DOCTYPE html>
+
+<!-- html tag: poore page ka root, lang="en" matlab page English me hai -->
+<html lang="en">
+
+<!-- head: page ki hidden info (title, meta), ye screen par nahi dikhti -->
+<head>
+
+<!-- meta: page ki settings (UTF-8 characters + mobile fit) -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- title: browser ke tab me dikhta hai -->
+<title>Document</title>
+<!-- comment: ye browser me nahi dikhta, sirf code samajhne ke liye hota hai -->
+
+</head>
+
+<!-- body: jo kuch screen par dikhna hai, wo sab yahan likhte hain -->
+<body>
+<!-- Heading tags: h1 sabse important, h6 sabse kam -->
+<h1>Heading 1</h1> <!--most imp -->
+<h2>heading 2</h2>
+<h3>heading 3</h3>
+<h4>heading 4</h4>
+<h5>heading 5</h5>
+<h6>heading 6</h6> <!--least imp -->
+
+<!-- Paragraph tag: normal text likhne ke liye -->
+<!--Toggle word wrap (Alt + Z): lambi line horizontal scroll nahi hoti, next line me aa jaati hai -->
+<p> helo kaho ka hal ba thik ba nu ho batao ,ha ho hyamar t thik ba tu apaan batao tahar ka hal ba </p>
+
+<!-- Anchor tag: link banane ke liye, href me address likhte hain -->
+<a href="https://youtu.be/R-4cvbrDbv8?si=PlDRQGLjIvgvU5rg">song</a>
+
+<!-- Absolute link: poora URL, dusri website par jaane ke liye -->
+<a href="https://youtu.be/pfHrIXiqI4w?si=qMgooKsNSxqI0hq4">samay</a>
+
+<!-- br: gap ya nayi line ke liye -->
+<br />
+
+<!-- Relative link: sirf path, apni hi site ke page par jaane ke liye -->
+<a href="/hello.html">open hello</a>
+
+<br />
+<br />
+<!-- img tag: image dikhane ke liye (isme closing tag nahi hota). src = image ka address/link, alt = agar image load na ho to ye text dikhega (accessibility ke liye bhi zaroori) -->
+<img src = "https://www.shutterstock.com/image-photo/top-view-notebook-fountain-pen-260nw-2455494185.jpg" alt="notebook 3">
+
+<br />
+
+<!-- height attribute: image ki unchai pixels me set karta hai, width apne aap ratio ke hisaab se adjust ho jaati hai -->
+<img src = "https://tiimg.tistatic.com/fp/1/007/669/yellow-cover-rectangular-single-line-a4-size-white-paper-spiral-notebook-with-224-pages-650.jpg" alt ="notebook1" height = "50">
+<br />
+
+<!-- width attribute: image ki chaudai pixels me set karta hai, height apne aap ratio ke hisaab se adjust ho jaati hai -->
+<img src = "https://tiimg.tistatic.com/fp/1/007/669/yellow-cover-rectangular-single-line-a4-size-white-paper-spiral-notebook-with-224-pages-650.jpg" alt ="notebook1" width = "150"> 
+
+<br />
+
+<!-- b tag: text ko bold (mota) karta hai -->
+<b> bold </b>
+<br />
+
+<!-- i tag: text ko italic (tirchha) karta hai -->
+<i> italic </i>
+<br />
+
+<!-- u tag: text ke neeche line (underline) lagata hai -->
+<u> Underline </u>
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<!-- Nested tags: ek hi text par b + u + i teeno saath me laga sakte hain. Dhyan rahe: jo tag sabse pehle khola ho wo sabse last me band hota hai, yahan closing order galat hai (</p> </u> </i>), sahi order hota: </i> </u> </p> -->
+<p> <b> sample paragraph </b>  <u>  <i> sample paragraph sample paragraph sample paragraph sample paragraph sample paragraph sample paragraph </p> </u> </i> 
+<br />
+<br />
+
+<!-- hr tag: horizontal line banata hai, do sections ko alag karne ke liye (isme bhi closing tag nahi hota) -->
+<hr />
+
+<!-- small tag: text ko chota dikhata hai -->
+<small> text ko chota show kara </small>
+<br />
+<br />
+
+<!-- sub tag: subscript, text ko line ke thoda neeche dikhata hai (jaise chemistry me H2O) -->
+<p> h <sub>2</sub> 0 </p>
+
+<!-- sup tag: superscript, text ko line ke thoda upar dikhata hai (jaise maths me power / exponent) -->
+<p> a <sup>m</sup> * a<sup>n</sup> = a<sup>m+n</sup> </p>
+<br />
+<br />
+
+<!-- Lorem ipsum: dummy text hota hai jo layout test karne ke liye use hota hai. p tag me beech ke bahut saare spaces/enter browser ek hi space bana deta hai -->
+<p> Lorem                          ipsum dolor sit, amet consectetur adipisicing elit. Expedita minima, quis quidem nihil  
+  asperiores aut ducimus deserunt esse modi sunt, impedit natus cumque alias fugit dolorem cupiditate quaerat eius quas?</p>
+
+<!-- pre tag: preformatted text, jaisa likhoge waisa hi dikhega (extra spaces aur enter dabane par nayi line bhi save rehti hai). Aam taur par monospace font me dikhta hai, code ya poem dikhane ke liye useful -->
+<pre> Lorem                          ipsum dolor sit, amet consectetur adipisicing elit. Expedita minima, quis quidem nihil  
+
+
+  asperiores aut ducimus.                              
+  
+  
+  deserunt esse modi sunt, impedit natus cumque alias fugit dolorem cupiditate quaerat eius quas?</pre>
+
+
+<!-- ============================================================ -->
+<!-- ===================== LEVEL 3 STARTS ======================= -->
+<!-- ============================================================ -->
+
+<br />
+<hr />
+<hr />
+
+<!-- Page Layout Techniques: page ko alag alag hisson me baantna (upar ka part, beech ka part, neeche ka part) -->
+
+<!-- Semantic tags: aise tags jinke naam se hi pata chal jaye ki wo kis kaam ke liye hain (header = upar ka part, footer = neeche ka part). Fayde: 1) code padhna aasan, 2) SEO: Google ko page ka structure samajh aata hai, 3) Accessibility: screen reader wale logon ko help milti hai. Dhyan rahe: browser me ye tags normal text jaise hi dikhte hain, farq sirf meaning me hota hai (design/look baad me CSS se aayega) -->
+
+<!-- "using the Right Tags": jis kaam ke liye jo tag bana hai wahi use karo, har jagah sirf div (aage padhenge) mat laga do -->
+
+<!-- Page ka basic layout kuch aisa hota hai:
+     header   -> upar (logo, title, menu)
+     main     -> beech ka asli content
+        section -> content ka ek hissa
+        article -> alag se poora content (blog/news)
+        aside   -> side ka content (ads, related links)
+     footer   -> neeche (copyright, contact)
+-->
+
+<!-- header tag: page ka upar wala part, jisme aam taur par logo, website ka naam aur navigation menu hota hai. (header kisi section ya article ke andar bhi use ho sakta hai, uske intro ke liye) -->
+<header>
+  <h2>Header: Meri Website ka Naam</h2>
+
+  <!-- nav tag (extra): navigation links ka group, jaise menu bar. Aksar header ke andar hi hota hai. Slide me nahi hai par layout ke liye bahut kaam ka hai -->
+  <nav>
+    <!-- href="#main-demo": # ke baad kisi element ka id likho to click karne par usi page ke us hisse par scroll ho jata hai (id ka poora topic aage aayega) -->
+    <a href="#main-demo">Main par jao</a> |
+    <a href="#footer-demo">Footer par jao</a>
+  </nav>
+</header>
+
+<hr />
+
+<!-- main tag: page ka sabse important / mukhya content. Ek page me sirf ek hi visible main hona chahiye, aur ye header, footer, nav ya aside ke andar nahi rakhte -->
+<main id="main-demo">
+  <h2>Main: Page ka Mukhya Content</h2>
+
+  <!-- ===== Inside Main Tag: section, article, aside ===== -->
+
+  <!-- section tag: page ke ek hisse (topic) ke liye, jaise About, Services, Contact. Section me aam taur par ek heading hoti hai -->
+  <section>
+    <h3>Section: About Me</h3>
+    <p> Ye section tag hai, jo page ke ek alag topic ko group karta hai. </p>
+  </section>
+
+  <!-- article tag: aisa content jo akela bhi poora samajh aaye aur kahin aur rakh do tab bhi theek rahe, jaise blog post, news, comment, product card.
+       Difference yaad rakho: section = kisi bade topic ka hissa, article = apne aap me poora/independent content -->
+  <article>
+    <h3>Article: Meri Pehli Blog Post</h3>
+    <p> Ye article tag hai, ye blog post jaisa independent content hai. </p>
+  </article>
+
+  <!-- aside tag: aisa content jo main content ke side me ho aur uska direct hissa na ho, jaise ads, related links, sidebar -->
+  <aside>
+    <h3>Aside: Ads / Related Links</h3>
+    <p> Ye aside tag hai, yahan side wala content aata hai (jaise ads). </p>
+  </aside>
+</main>
+
+<hr />
+
+<!-- footer tag: page ka neeche wala part, jisme copyright, contact info, social links, privacy policy jaisi cheezein hoti hain -->
+<footer id="footer-demo">
+  <!-- &copy; ek HTML entity hai, ye browser me copyright symbol dikhata hai -->
+  <p>&copy; 2026 Meri Website. All rights reserved.</p>
+</footer>
+
+<!-- Dhyan rahe: header, main, footer, section, article, aside sab block elements hain (poori width lete hain), aur ye sab div ki tarah container hi hain bas inka matlab (meaning) bata hua hota hai -->
+
+<br />
+<hr />
+
+<!-- ===================== Revisiting Anchor Tag ===================== -->
+
+<h3>Revisiting Anchor Tag</h3>
+
+<!-- target attribute: batata hai link kahan khulega.
+     _self  = usi tab me (ye default hota hai, kuch na likho to bhi yahi hota hai)
+     _blank = naye tab me khulta hai
+     Note: PDF slide me target="_main" likha hai, par sahi value "_blank" hoti hai. "_main" koi valid keyword nahi hai, isliye hamesha _blank likho -->
+<a href="https://google.com" target="_blank">Google (naye tab me)</a>
+<br />
+
+<!-- target="_self": usi tab me khulega -->
+<a href="https://google.com" target="_self">Google (usi tab me)</a>
+<br />
+
+<!-- rel="noopener noreferrer": jab target="_blank" use karo to ye bhi likhna achhi practice hai, isse naya khulne wala page purane page ko control nahi kar sakta (security). Naye browsers khud ye handle kar lete hain, par likhna safe rehta hai -->
+<a href="https://google.com" target="_blank" rel="noopener noreferrer">Google (safe new tab)</a>
+<br />
+<br />
+
+<!-- Clickable image: anchor tag ke andar img tag rakh do, to image par click karne se link khul jayega. Anchor ke andar text hi nahi, koi bhi element rakh sakte hain -->
+<a href="https://google.com" target="_blank">
+  <img src = "https://tiimg.tistatic.com/fp/1/007/669/yellow-cover-rectangular-single-line-a4-size-white-paper-spiral-notebook-with-224-pages-650.jpg" alt ="clickable notebook" width = "150">
+</a>
+<br />
+<br />
+
+<!-- Extra: anchor tag sirf website ke liye nahi, mail aur call ke liye bhi chalta hai.
+     mailto: click karne par mail app khulta hai
+     tel: click karne par phone se call lagne wala option aata hai (mobile me) -->
+<a href="mailto:example@gmail.com">Mail bhejo</a>
+<br />
+<a href="tel:+910000000000">Call karo</a>
+
+<br />
+<br />
+<hr />
+
+<!-- ===================== Revisiting Image Tag ===================== -->
+
+<h3>Revisiting Image Tag</h3>
+
+<!-- Image par size set karne ke 2 attributes: height aur width.
+     Note: PDF slide me height=50px likha hai, par HTML attribute me sirf number likhte hain (height="50"), "px" CSS me likhte hain (CSS aage aayegi) -->
+
+<!-- sirf height di: width apne aap ratio ke hisaab se set hogi -->
+<img src = "https://tiimg.tistatic.com/fp/1/007/669/yellow-cover-rectangular-single-line-a4-size-white-paper-spiral-notebook-with-224-pages-650.jpg" alt ="notebook set height" height = "50">
+<br />
+
+<!-- sirf width di: height apne aap ratio ke hisaab se set hogi -->
+<img src = "https://tiimg.tistatic.com/fp/1/007/669/yellow-cover-rectangular-single-line-a4-size-white-paper-spiral-notebook-with-224-pages-650.jpg" alt ="notebook set width" width = "150">
+<br />
+
+<!-- dono di (width + height): image apni original ratio se hat kar kheench/dab sakti hai, isliye aam taur par ek hi attribute dena better hai -->
+<img src = "https://tiimg.tistatic.com/fp/1/007/669/yellow-cover-rectangular-single-line-a4-size-white-paper-spiral-notebook-with-224-pages-650.jpg" alt ="notebook stretched" width = "150" height = "50">
+<br />
+<br />
+
+<!-- Relative url wala image: src="/image.png" sirf path hai (apne project folder wali image ke liye). Ye file mere folder me nahi hai, isliye image load nahi hogi aur alt wala text dikhega. Isi liye alt likhna zaroori hai -->
+<img src="/image.png" alt="Random Image (file nahi mili isliye ye alt text dikh raha hai)">
+
+<br />
+<br />
+<hr />
+
+<!-- ============================================================ -->
+<!-- Yahan tak Level 3 ka Div tag se pehle wala part khatam.     -->
+<!-- Agla topic: Div tag (block element) aur Span tag (inline).  -->
+<!-- ============================================================ -->
+
+</body>
+</html>
